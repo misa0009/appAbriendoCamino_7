@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Aplicacion de firmas</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Abriendo Camino</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    fichar
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="inicio1">Inicio</string>
+    <string name="matricular_alumno">Matricular Alumno</string>
+    <string name="modificar_alumno">Modificar Alumno</string>
+    <string name="borrar_alumno">Borrar Alumno</string>
+    <string name="listados">Listados</string>
+    <string name="listar_alumnos">Listar Alumnos</string>
+    <string name="bienvenidos_a_la_app">Bienvenidos a la APP</string>
+    <string name="de_nuestro_centro_educativo">de nuestro centro educativo</string>
+    <string name="todo">TODO</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="aceptar1">Aceptar</string>
+    <string name="dni1">DNI</string>
+    <string name="matr_cula_de_un_nuevo_alumno">MATRÍCULA DE UN NUEVO ALUMNO</string>
+    <string name="nombre1">Nombre</string>
+    <string name="apellidos1">Apellidos</string>
+    <string name="id">ID</string>
+    <string name="modificar_ficha">MODIFICAR REGISTRO</string>
+    <string name="inicio">Inicio</string>
+    <string name="volver">Volver</string>
+    <string name="firma">Firma</string>
+    <string name="fecha">Fecha</string>
+    <string name="guardar">Guardar</string>
+    <string name="fecha_de_inicio">Fecha de Inicio</string>
+    <string name="fecha_de_fin">Fecha de Fin</string>
+    <string name="exportar">Exportar</string>
+    <string name="dni">DNI</string>
+    <string name="borrar_firma">Borrar Firma</string>
+    <string name="fichar">Registrar Entrada</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="nombre">Nombre</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="bienvenido_a_abriendo_camino">Bienvenido a abriendo camino</string>
+    <string name="fichar_inicio">Registrar Entrada</string>
+    <string name="logo">Logo</string>
+    <string name="clock_in_app">Clock in app</string>
+    <string name="fichar2">Fichar</string>
+    <string name="textview">TextView</string>
+    <string name="textview2">TextView</string>
+    <string name="textview3">TextView</string>
+    <string name="textview4">TextView</string>
+    <string name="firmapequena">firmapequena</string>
+</resources>

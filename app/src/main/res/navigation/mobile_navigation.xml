@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_inicio">
+    <fragment
+        android:id="@+id/nav_inicio"
+        android:name="es.iesoretania.bdd_navigationdrawer.Fragmentos.Fragment_inicio"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_inicio">
+        <action
+            android:id="@+id/action_nav_inicio_to_nav_matricular"
+            app:destination="@id/nav_matricular" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_matricular"
+        android:name="es.iesoretania.bdd_navigationdrawer.Fragmentos.Fragment_Ficha"
+        android:label="Registrar"
+        tools:layout="@layout/fragment_fichar">
+        <action
+            android:id="@+id/action_nav_matricular_to_nav_inicio"
+            app:destination="@id/nav_inicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_listar"
+        android:name="es.iesoretania.bdd_navigationdrawer.Fragmentos.Fragment_Listar"
+        android:label="Registro de entradas y salidas"
+        tools:layout="@layout/fragment_listar">
+        <action
+            android:id="@+id/action_nav_listar_to_fragment__Mod"
+            app:destination="@id/nav_modificar" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_modificar"
+        android:name="es.iesoretania.bdd_navigationdrawer.Fragmentos.Fragment_Modificar"
+        android:label="Modificaciones"
+        tools:layout="@layout/fragment_modificar" >
+        <action
+            android:id="@+id/action_fragment__Mod_to_nav_listar"
+            app:destination="@id/nav_listar" />
+        <action
+            android:id="@+id/action_fragment__Mod_to_nav_inicio"
+            app:destination="@id/nav_inicio" />
+        <argument
+            android:name="DNI"
+            app:argType="string" />
+        <argument
+            android:name="fecha"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_exportar"
+        android:name="es.iesoretania.bdd_navigationdrawer.Fragmentos.Fragment_Exportar"
+        android:label="Exportar"
+        tools:layout="@layout/fragment_exportar" />
+    <fragment
+        android:id="@+id/nav_opciones"
+        android:name="es.iesoretania.bdd_navigationdrawer.Fragmentos.Fragment_OpcionesCSV"
+        android:label="Opciones CSV"
+        tools:layout="@layout/fragment_opciones_csv" />
+    <fragment
+        android:id="@+id/nav_borrarBD"
+        android:name="es.iesoretania.bdd_navigationdrawer.Fragmentos.Fragment_BorrarBD"
+        android:label="Borrar Base De Datos"
+        tools:layout="@layout/fragment_borrar_bdd" />
+    <fragment
+        android:id="@+id/nav_Importar"
+        android:name="es.iesoretania.bdd_navigationdrawer.Fragmentos.Fragment_Importar"
+        android:label="Importar Base de Datos"
+        tools:layout="@layout/fragment_importar" />
+    <fragment
+        android:id="@+id/nav_ajustes"
+        android:name="es.iesoretania.bdd_navigationdrawer.Fragmentos.Fragment_Ajustes"
+        android:label="Ajustes"
+        tools:layout="@layout/fragment_ajustes">
+        <action
+            android:id="@+id/action_fragment_Ajustes_to_nav_inicio"
+            app:destination="@id/nav_inicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_baseDatos"
+        android:name="es.iesoretania.bdd_navigationdrawer.Fragmentos.Fragment_BaseDatos"
+        android:label="Base de Datos"
+        tools:layout="@layout/fragment_bdd">
+        <action
+            android:id="@+id/action_fragment_BaseDatos_to_nav_borrarBD"
+            app:destination="@id/nav_borrarBD" />
+        <action
+            android:id="@+id/action_fragment_BaseDatos_to_nav_Importar"
+            app:destination="@id/nav_Importar" />
+        <action
+            android:id="@+id/action_fragment_BaseDatos_to_nav_opciones"
+            app:destination="@id/nav_opciones" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_tutor"
+        android:name="es.iesoretania.bdd_navigationdrawer.Fragmentos.Fragment_Listado_Tutores"
+        android:label="Listado de Tutores"
+        tools:layout="@layout/fragment__listado__tutores">
+        <action
+            android:id="@+id/action_nav_tutor_to_fragment_FicharTutor"
+            app:destination="@id/nav_fichaTutor" />
+        <argument
+            android:name="dni_tutelado"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_nav_tutor_to_nav_relTutelados"
+            app:destination="@id/nav_relTutelados" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_fichaTutor"
+        android:name="es.iesoretania.bdd_navigationdrawer.Fragmentos.Fragment_FicharTutor"
+        android:label="Registrar Tutor"
+        tools:layout="@layout/fragment__fichar_tutor">
+        <action
+            android:id="@+id/action_fragment_FicharTutor_to_nav_inicio"
+            app:destination="@id/nav_inicio" />
+        <argument
+            android:name="PersonaTutor"
+            app:argType="es.iesoretania.bdd_navigationdrawer.Objetos.Persona" />
+        <argument
+            android:name="Mod"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/action_nav_fichaTutor_to_nav_tutor"
+            app:destination="@id/nav_tutor" />
+        <argument
+            android:name="ref"
+            app:argType="boolean" />
+        <argument
+            android:name="dniTutelado"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_nav_fichaTutor_to_nav_relTutelados"
+            app:destination="@id/nav_relTutelados" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_fichaTutelado"
+        android:name="es.iesoretania.bdd_navigationdrawer.Fragmentos.Fragment_FicharTutelado"
+        android:label="Registrar Tutelado"
+        tools:layout="@layout/fragment__fichar_tutelado">
+        <argument
+            android:name="mod"
+            app:argType="boolean" />
+        <argument
+            android:name="tutelado"
+            app:argType="es.iesoretania.bdd_navigationdrawer.Objetos.Tutelado" />
+        <action
+            android:id="@+id/action_nav_fichaTutelado_to_nav_tutelado"
+            app:destination="@id/nav_tutelado" />
+        <action
+            android:id="@+id/action_nav_fichaTutelado_to_nav_inicio"
+            app:destination="@id/nav_inicio" />
+        <action
+            android:id="@+id/action_nav_fichaTutelado_to_fragment_RelTutelados"
+            app:destination="@id/nav_relTutelados" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_tutelado"
+        android:name="es.iesoretania.bdd_navigationdrawer.Fragmentos.Fragment_Listado_Tutelados"
+        android:label="Lista de Tutelados"
+        tools:layout="@layout/fragment__listado__tutelados">
+        <action
+            android:id="@+id/action_fragment_Listado_Tutelados_to_fragment_FicharTutelado"
+            app:destination="@id/nav_fichaTutelado" />
+        <action
+            android:id="@+id/action_nav_tutelado_to_nav_relTutelados"
+            app:destination="@id/nav_relTutelados" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_relTutelados"
+        android:name="es.iesoretania.bdd_navigationdrawer.Fragmentos.Fragment_RelTutelados"
+        android:label="Tutores del usuario"
+        tools:layout="@layout/fragment__rel_tutelados">
+        <argument
+            android:name="dni"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_nav_relTutelados_to_nav_tutor"
+            app:destination="@id/nav_tutor" />
+    </fragment>
+</navigation>

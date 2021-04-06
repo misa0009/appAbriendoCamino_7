@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragmentos.Fragment_FicharTutor" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvTutor"
+                android:layout_width="520dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="80dp"
+                android:gravity="center"
+                android:text="REGISTRAR TUTOR"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/etDniTutor"
+                android:layout_width="520dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="NIF"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTutor" />
+
+            <EditText
+                android:id="@+id/etNombreTutor"
+                android:layout_width="520dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Nombre"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etDniTutor" />
+
+            <EditText
+                android:id="@+id/etApellidoTutor"
+                android:layout_width="520dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Apellidos"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etNombreTutor" />
+
+            <EditText
+                android:id="@+id/etObservacionesTutor"
+                android:layout_width="520dp"
+                android:layout_height="190dp"
+                android:layout_marginTop="12dp"
+                android:gravity="top|left"
+                android:hint="Observaciones"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:scrollHorizontally="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etEmailTutor" />
+
+            <EditText
+                android:id="@+id/etProvinciaTutor"
+                android:layout_width="270dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Provincia"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/etCpTutor"
+                app:layout_constraintTop_toBottomOf="@+id/etApellidoTutor" />
+
+            <EditText
+                android:id="@+id/etPoblacionTutor"
+                android:layout_width="215dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="124dp"
+                android:layout_marginLeft="124dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Poblacion"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etCpTutor" />
+
+            <EditText
+                android:id="@+id/etCpTutor"
+                android:layout_width="215dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="124dp"
+                android:layout_marginLeft="124dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="C.P"
+                android:inputType="number"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etApellidoTutor" />
+
+            <EditText
+                android:id="@+id/etTelefonoTutor"
+                android:layout_width="520dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Telefono"
+                android:inputType="phone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etPoblacionTutor" />
+
+            <EditText
+                android:id="@+id/etEmailTutor"
+                android:layout_width="520dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etTelefonoTutor" />
+
+            <Button
+                android:id="@+id/btnAceptarTutor"
+                android:layout_width="140dp"
+                android:layout_height="79dp"
+                android:layout_marginStart="156dp"
+                android:layout_marginLeft="156dp"
+                android:layout_marginTop="48dp"
+                android:text="Aceptar"
+                app:backgroundTint="#1C6A1F"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.403"
+                app:layout_constraintStart_toEndOf="@+id/btnCancelarTutor"
+                app:layout_constraintTop_toBottomOf="@+id/etObservacionesTutor" />
+
+            <Button
+                android:id="@+id/btnCancelarTutor"
+                android:layout_width="140dp"
+                android:layout_height="79dp"
+                android:layout_marginStart="124dp"
+                android:layout_marginLeft="124dp"
+                android:layout_marginTop="48dp"
+                android:text="Cancelar"
+                app:backgroundTint="#206322"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etObservacionesTutor" />
+
+            <EditText
+                android:id="@+id/etDomicilioTutor"
+                android:layout_width="270dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Domicilio"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toEndOf="@+id/etPoblacionTutor"
+                app:layout_constraintTop_toBottomOf="@+id/etProvinciaTutor" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragmentos.Fragment_OpcionesCSV">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnRegistros"
+            android:layout_width="183dp"
+            android:layout_height="194dp"
+            android:layout_marginTop="172dp"
+            android:background="#155501"
+            android:text="CSV Registros"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:backgroundTint="#155501"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.707"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnPersonas"
+            android:layout_width="183dp"
+            android:layout_height="194dp"
+            android:layout_marginTop="172dp"
+            android:background="#155501"
+            android:text="CSV Personas"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:backgroundTint="#155501"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.264"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnCorreo"
+            android:layout_width="183dp"
+            android:layout_height="194dp"
+            android:layout_marginTop="396dp"
+            android:background="#155501"
+            android:text="CSV Correo"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:backgroundTint="#155501"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.707"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnComleto"
+            android:layout_width="183dp"
+            android:layout_height="194dp"
+            android:layout_marginTop="396dp"
+            android:background="#155501"
+            android:text="CSV Completo"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:backgroundTint="#155501"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.264"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

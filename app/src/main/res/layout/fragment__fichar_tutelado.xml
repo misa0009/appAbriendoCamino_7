@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragmentos.Fragment_FicharTutelado">
+
+    <TextView
+        android:id="@+id/tvFicharTutelado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="272dp"
+        android:layout_marginLeft="272dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="Registar Tutelado"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etDniTutelado"
+        android:layout_width="511dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="DNI"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFicharTutelado" />
+
+    <EditText
+        android:id="@+id/etApellidosTutelado"
+        android:layout_width="511dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Apellidos"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNombreTutelado" />
+
+    <EditText
+        android:id="@+id/etTelefonoTutelado"
+        android:layout_width="200dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="436dp"
+        android:layout_marginLeft="436dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="telefono"
+        android:inputType="phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDomicilioTutelado" />
+
+    <EditText
+        android:id="@+id/etCpTutelado"
+        android:layout_width="225dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="408dp"
+        android:layout_marginLeft="408dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="C.P"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etApellidosTutelado" />
+
+    <EditText
+        android:id="@+id/etEdadTutelado"
+        android:layout_width="225dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Edad"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etApellidosTutelado" />
+
+    <EditText
+        android:id="@+id/etDomicilioTutelado"
+        android:layout_width="511dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="280dp"
+        android:ems="10"
+        android:hint="Domicilio"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFicharTutelado" />
+
+    <EditText
+        android:id="@+id/etPoblacionTutelado"
+        android:layout_width="280dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Poblacion"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDomicilioTutelado" />
+
+    <EditText
+        android:id="@+id/etNombreTutelado"
+        android:layout_width="511dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDniTutelado" />
+
+    <EditText
+        android:id="@+id/etObservacionesTutelado"
+        android:layout_width="511dp"
+        android:layout_height="141dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="16dp"
+        android:gravity="top|left"
+        android:hint="Observaciones"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:scrollHorizontally="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEmailTutelado" />
+
+    <EditText
+        android:id="@+id/etProvinciaTutelado"
+        android:layout_width="511dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Provincia"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPoblacionTutelado" />
+
+    <EditText
+        android:id="@+id/etEmailTutelado"
+        android:layout_width="511dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etProvinciaTutelado" />
+
+    <Button
+        android:id="@+id/btnAceptarTutelado"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="448dp"
+        android:layout_marginLeft="448dp"
+        android:layout_marginTop="64dp"
+        android:background="#275C29"
+        android:text="Aceptar"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#1F5E22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etObservacionesTutelado" />
+
+    <Button
+        android:id="@+id/btnCancelarTutelado"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="64dp"
+        android:background="#275C29"
+        android:text="Cancelar"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#1F5E22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etObservacionesTutelado" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

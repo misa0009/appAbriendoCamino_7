@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragmentos.Fragment_BaseDatos">
+
+    <Button
+        android:id="@+id/btnBorrar"
+        android:layout_width="244dp"
+        android:layout_height="237dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="228dp"
+        android:background="#FFFFFF"
+        android:foreground="@drawable/borrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toEndOf="@+id/btnCSV"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCSV"
+        android:layout_width="238dp"
+        android:layout_height="224dp"
+        android:layout_marginTop="228dp"
+        android:background="#FFFFFF"
+        android:foreground="@drawable/csv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnImport"
+        android:layout_width="238dp"
+        android:layout_height="244dp"
+        android:layout_marginTop="28dp"
+        android:background="#FFFFFF"
+        android:foreground="@drawable/csv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvImport" />
+
+    <TextView
+        android:id="@+id/tvExport"
+        android:layout_width="241dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:text="EXPORT"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCSV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.915" />
+
+    <TextView
+        android:id="@+id/tvImport"
+        android:layout_width="232dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="524dp"
+        android:gravity="center_horizontal"
+        android:text="IMPORT"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvBorrar"
+        android:layout_width="237dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:text="DELETE"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnBorrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.66"
+        app:layout_constraintStart_toEndOf="@+id/tvExport"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.911" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

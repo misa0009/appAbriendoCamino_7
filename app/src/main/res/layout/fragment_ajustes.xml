@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragmentos.Fragment_Ajustes">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="210dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="316dp"
+        android:text="@string/guardar"
+        android:textSize="24sp"
+        app:backgroundTint="#166600"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etDestinatario"
+        android:layout_width="646dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="Mail destinatario"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAjustes" />
+
+    <TextView
+        android:id="@+id/tvAjustes"
+        android:layout_width="286dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="52dp"
+        android:text="DATOS EXPORTACIÓN"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

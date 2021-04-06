@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/ic_home"
+            android:title="@string/inicio" />
+        <item
+            android:id="@+id/nav_matricular"
+            android:icon="@drawable/ic_agregar"
+            android:title="Registrar Entrada" />
+        <item
+            android:id="@+id/nav_tutor"
+            android:icon="@drawable/anadir_grupo"
+            android:title="Tutores" />
+        <item
+            android:id="@+id/nav_tutelado"
+            android:icon="@drawable/anadir_grupo"
+            android:title="Tutelados" />
+        <item
+            android:id="@+id/nav_exportar"
+            android:icon="@drawable/exportar"
+            android:title="Exportar" />
+        <item
+            android:id="@+id/nav_baseDatos"
+            android:icon="@drawable/base_datos"
+            android:title="Base de Datos" />
+
+
+
+
+
+
+    </group>
+    <item android:id="@+id/it_listados" android:title="@string/listados">
+        <menu>
+            <item
+                android:id="@+id/nav_listar"
+                android:icon="@drawable/ic_listar"
+                android:title="Registro de Entradas y Salidas" />
+
+        </menu>
+
+    </item>
+    <item android:id="@+id/it_setting" android:title="Ajustes">
+        <menu>
+            <item
+                android:id="@+id/nav_ajustes"
+
+                android:icon="@drawable/configuraciones"
+                android:title="Ajustes" />
+
+
+        </menu>
+
+    </item>
+
+
+
+
+
+
+
+
+
+
+</menu>

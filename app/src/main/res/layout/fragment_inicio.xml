@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    tools:context=".Fragmentos.Fragment_inicio">
+
+
+    <TextView
+        android:id="@+id/tvInicio"
+        android:layout_width="501dp"
+        android:layout_height="81dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center|center_horizontal"
+        android:text="@string/bienvenido_a_abriendo_camino"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnFichar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+
+    <Button
+        android:id="@+id/btnFichar"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="293dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="135dp"
+        android:layout_marginLeft="135dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginRight="136dp"
+        android:layout_marginBottom="250dp"
+        android:height="40dp"
+        android:background="#166600"
+        android:text="@string/fichar_inicio"
+        android:textSize="24sp"
+        app:backgroundTint="#166600"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="561dp"
+        android:layout_height="199dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginRight="47dp"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/logo_web_100x320"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
